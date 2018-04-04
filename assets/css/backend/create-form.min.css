@@ -469,6 +469,9 @@
     font-size:12px;
     color:#797979;
 }
+.super-create-form.sticky .super-header .super-actions > label {
+    display:none;
+}
 .super-header .super-actions > label > input {
     margin-right:10px;
 }
