@@ -1,18 +1,40 @@
-### Mar 08, 2018 - Version 3.9.5
+### Apr 04, 2018 - Version 4.0.8
+- Added: `{author_meta_****}` tag to retrieve current post author or profile user custom meta data
+- Improved: hide text "Allow saving form with duplicate field names (for developers only)" in back-end when action bar is sticky
+- Improved: Conditional Validation option can now also work in combination with float numbers
+- Improved: File upload button name line height and checkbox/radio :after top position RTL forms
+- Improved: Currency field now compatible with conditional validations
+- Fix: bug with variable field in combination with conditionally hidden
+- Fix: Conflict with jquery scope for hint.js causing a javascript error
+- Fix: Columns responsiveness was broken because of some future development code
+- Fix: Bug with front-end forms not loading correct settings/styles from global settings (not merging correctly)
+- Fix: Bug fix with automatic line breaks for HTML element
+
+### Mar 16, 2018 - Version 4.0.0
+- Added: Introduction tutorial (to explain back-end)
+- Added: de_DE_formal translation file
+- Added: `{user_meta_****}` tag to retrieve current logged in user custom meta data
+- Added: `{post_meta_****}` tag to retrieve current post custom meta data
+- Added: Option to retrieve current author meta data for dropdown element with
+- Added: `{author_id}` and `{author_name}` tags which do the same thing as the `{post_author_id}` and `{post_author_name}` tags
 - Added: minimize/maximize toggle button on builder page
 - Added: option to even save form when it contains duplicate field names (for developers)
-- Fix: Issue with Print action for Button element when no HTML file was choosen
 - Added: (GDPR compliance) Option to only save contact entry when a specific condition is met (Form Settings > Form Settings)
+- Improved: author tags will now also retrieve the author ID and author name when located on profile page of an author
 - Improved: Export/import system for single forms via Form Settings > Export & Import
 - Improved: Global settings and form settings are now merged for better sync and more controllable way when having to deal with many forms
 - Improved: Use `CSS Flexbox Layout Module` to solve Safari 0px height issue/bug for conditional hidden items
+- Updated: de_DE translation file
+- Fix: removed 'wpembed' from tinymce plugin list (was dropped since wordpress 4.8)
+- Fix: Issue with Register & Login Add-on when saving custom user meta data
+- Fix: Issue with Print action for Button element when no HTML file was choosen
 
 ### Feb 28, 2018 - Version 3.9.0
 - Improved: Don't save settings that are the same as global settings
 - Fix: Form settings that did not have a filter value where not correctly updates when changing and saving form.
 - Fix: &quot was being replaced with " when updating/saving elements
-- Fix: {tag;label} not removed from HTML element when field is conditionally hidden
-- Added: Tag to retrieve selected option label in emails with {fieldname;label}
+- Fix: `{tag;label}` not removed from HTML element when field is conditionally hidden
+- Added: Tag to retrieve selected option label in emails with `{fieldname;label}`
 - Added: Option to replace comma's with HTML in emails for checkbox/radio/dropdown elements under Advanced TAB
 - Added: Cool new feature to do if foreach loops inside email body content with {tag} compatibility e.g:
   - This method is intended to be used in combination with dynamic columns
@@ -29,7 +51,7 @@
 - Added: `htmlentities` Flags `ENT_NOQUOTES | ENT_SUBSTITUTE | ENT_DISALLOWED`
 
 ### Jan 29, 2018 - Version 3.8.0
-- Added: Compatibility for variable fields with advanced tags e.g: {field;2}
+- Added: Compatibility for variable fields with advanced tags e.g: `{field;2}`
 - Added: Option "User Form locker / submission limit", this option allows you to only allow a logged in user to submit a specific form once only
 - Added: Option to Toggle all fields to be exported to CSV on Contact Entry page in back-end
 - Added: "Submitted by:" on Contact Entries page when a form was submitted by a logged in user
@@ -515,7 +537,7 @@
 
 ### July 26, 2016 - Version 1.2.6
 - Fix: Missing options for Slider field
-- Added: Option to save custom contact entry titles including the option to use {field_tags}
+- Added: Option to save custom contact entry titles including the option to use {tags}
 - Added: Ability to automatically update the plugin without the need to delete it first
 - Added: Option to import Contact Entries from CSV file
 - Improved: Contact entry filter / search function
@@ -668,7 +690,7 @@
 - Added: Max/Min number for text field
 - Added: default value option for datepicker field
 - Added: Year range for datepicker field
-- Added: validation option to conditionally check on an other fields value with field tag e.g {password}, this way you can for instance add a password confirm check (usefull for registration forms)
+- Added: validation option to conditionally check on an other fields value with field tag e.g `{password}`, this way you can for instance add a password confirm check (usefull for registration forms)
 - Changed: function to return dynamic functions as an array, this way it could easily be implemented into the preview in the backend while creating forms
 
 ### March 4, 2016 - Version 1.1.3
